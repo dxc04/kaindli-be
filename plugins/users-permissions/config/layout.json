@@ -1,0 +1,30 @@
+{
+  "user": {
+    "attributes": {
+      "bdate": {
+        "appearance": ""
+      },
+      "blocked": {
+        "appearance": ""
+      },
+      "first_name": {
+        "appearance": ""
+      },
+      "last_name": {
+        "appearance": ""
+      },
+      "companyRole": {
+        "appearance": ""
+      },
+      "dateHired": {
+        "appearance": ""
+      },
+      "isActive": {
+        "appearance": ""
+      },
+      "contactNumbers": {
+        "appearance": ""
+      }
+    }
+  }
+}

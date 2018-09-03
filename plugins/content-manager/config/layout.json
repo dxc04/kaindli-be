@@ -1,0 +1,33 @@
+{
+  "request": {
+    "attributes": {
+      "title": {
+        "appearance": ""
+      },
+      "created_at": {
+        "appearance": ""
+      },
+      "needed_by": {
+        "appearance": ""
+      },
+      "category": {
+        "appearance": ""
+      },
+      "notes": {
+        "appearance": "WYSIWYG"
+      },
+      "tags": {
+        "appearance": ""
+      },
+      "fields": {
+        "appearance": ""
+      },
+      "status": {
+        "appearance": ""
+      },
+      "available_at": {
+        "appearance": ""
+      }
+    }
+  }
+}

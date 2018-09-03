@@ -1,0 +1,61 @@
+{
+  "connection": "default",
+  "collectionName": "request",
+  "info": {
+    "name": "request",
+    "description": ""
+  },
+  "options": {
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "requestor": {
+      "model": "user",
+      "via": "requests",
+      "plugin": "users-permissions"
+    },
+    "needed_by": {
+      "type": "date"
+    },
+    "category": {
+      "default": "Open",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Document",
+        "Equipment",
+        "Credit",
+        "Payment"
+      ]
+    },
+    "notes": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "json"
+    },
+    "fields": {
+      "type": "json"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Open",
+        "In Progress",
+        "Pending",
+        "Denied",
+        "Approved",
+        "Provided",
+        "Received",
+        "Close"
+      ]
+    },
+    "available_at": {
+      "type": "date"
+    }
+  }
+}
