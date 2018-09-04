@@ -43,13 +43,13 @@
       "collection": "request",
       "via": "requestor"
     },
-    "firstName": {
+    "first_name": {
       "type": "string"
     },
-    "lastName": {
+    "last_name": {
       "type": "string"
     },
-    "companyRole": {
+    "company_role": {
       "type": "string"
     },
     "picture": {
@@ -57,13 +57,13 @@
       "via": "related",
       "plugin": "upload"
     },
-    "dateHired": {
+    "hired_date": {
       "type": "date"
     },
-    "isActive": {
+    "is_active": {
       "type": "boolean"
     },
-    "contactNumbers": {
+    "contact_numbers": {
       "type": "json"
     }
   },

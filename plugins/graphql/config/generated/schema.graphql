@@ -97,12 +97,12 @@ type UsersPermissionsUser {
   email: String!
   provider: String
   role: UsersPermissionsRole
-  firstName: String
-  lastName: String
-  companyRole: String
+  first_name: String
+  last_name: String
+  company_role: String
   picture: UploadFile
-  dateHired: DateTime
-  isActive: Boolean
-  contactNumbers: JSON
+  hired_date: DateTime
+  is_active: Boolean
+  contact_numbers: JSON
   requests(sort: String, limit: Int, start: Int, where: JSON): [Request]
 }
