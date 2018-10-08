@@ -22,6 +22,11 @@ enum ENUM_REQUEST_STATUS {
   Close
 }
 
+enum ENUM_USERSPERMISSIONSUSER_WORK_SETUP {
+  Office
+  Remote
+}
+
 """
 The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
 """
@@ -54,8 +59,9 @@ type Request {
   notes: String
   tags: JSON
   fields: JSON
-  status: ENUM_REQUEST_STATUS
+  status: ENUM_REQUEST_STATUS!
   available_at: DateTime
+  request_for: String
 }
 
 type UploadFile {
@@ -97,12 +103,13 @@ type UsersPermissionsUser {
   email: String!
   provider: String
   role: UsersPermissionsRole
-  first_name: String
-  last_name: String
-  company_role: String
+  first_name: String!
+  last_name: String!
+  company_role: String!
   picture: UploadFile
-  hired_date: DateTime
+  date_hired: DateTime
   is_active: Boolean
   contact_numbers: JSON
+  work_setup: ENUM_USERSPERMISSIONSUSER_WORK_SETUP!
   requests(sort: String, limit: Int, start: Int, where: JSON): [Request]
 }

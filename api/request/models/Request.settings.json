@@ -22,7 +22,6 @@
       "type": "date"
     },
     "category": {
-      "default": "Open",
       "type": "enumeration",
       "required": true,
       "enum": [
@@ -52,10 +51,15 @@
         "Provided",
         "Received",
         "Close"
-      ]
+      ],
+      "default": "Open",
+      "required": true
     },
     "available_at": {
       "type": "date"
+    },
+    "request_for": {
+      "type": "string"
     }
   }
 }

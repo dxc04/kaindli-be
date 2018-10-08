@@ -44,20 +44,23 @@
       "via": "requestor"
     },
     "first_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "last_name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "company_role": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "picture": {
       "model": "file",
       "via": "related",
       "plugin": "upload"
     },
-    "hired_date": {
+    "date_hired": {
       "type": "date"
     },
     "is_active": {
@@ -65,6 +68,15 @@
     },
     "contact_numbers": {
       "type": "json"
+    },
+    "work_setup": {
+      "default": "Office",
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "Office",
+        " Remote"
+      ]
     }
   },
   "collectionName": "users-permissions_user"
