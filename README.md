@@ -1,4 +1,4 @@
-# emquest-server
+# kaindli-server
 
 The datasource for emquest-client using strapi.
 
